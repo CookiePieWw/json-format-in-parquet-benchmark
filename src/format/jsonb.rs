@@ -13,7 +13,7 @@ use parquet::{
     file::properties::WriterProperties,
 };
 
-#[derive(PartialEq, Eq, Debug)]
+#[derive(PartialEq, Eq, Debug, Default)]
 pub struct JsonbVector {
     data: Vec<Vec<u8>>,
 }
@@ -26,13 +26,12 @@ impl From<&BinaryArray> for JsonbVector {
 }
 
 impl JsonCodec for JsonbVector {
-    fn encode(json_strs: &[&[u8]]) -> Self {
-        let mut data = Vec::new();
+    fn encode(&mut self, json_strs: &[&[u8]]) {
+        self.data.clear();
         for json_str in json_strs {
             let value = parse_value(json_str).unwrap();
-            data.push(value.to_vec());
+            self.data.push(value.to_vec());
         }
-        Self { data }
     }
 
     fn decode(&self) -> Vec<String> {
@@ -58,7 +57,7 @@ impl JsonCodec for JsonbVector {
         writer.close().unwrap();
     }
 
-    fn load(path: &str) -> Self {
+    fn load(&mut self, path: &str) {
         let path = format!("{}/{}", PARQUET_DIR, path);
         let file = File::open(path).unwrap();
         let builder = ParquetRecordBatchReaderBuilder::try_new(file).unwrap();
@@ -70,7 +69,7 @@ impl JsonCodec for JsonbVector {
             .as_any()
             .downcast_ref::<BinaryArray>()
             .unwrap();
-        array.into()
+        self.data = array.iter().map(|v| v.unwrap().to_vec()).collect();
     }
 
     fn name() -> String {
@@ -89,8 +88,9 @@ mod tests {
             r#"{"a":2,"b":"bar"}"#.as_bytes(),
             r#"{"a":3,"b":"baz"}"#.as_bytes(),
         ];
-        let jsonb = JsonbVector::encode(&json_strs.iter().map(|v| &v[..]).collect::<Vec<&[u8]>>());
-        let json_strs_decoded = jsonb.decode();
+        let mut jsonb_vec = JsonbVector::default();
+        jsonb_vec.encode(&json_strs.iter().map(|v| &v[..]).collect::<Vec<&[u8]>>());
+        let json_strs_decoded = jsonb_vec.decode();
         assert_eq!(
             json_strs,
             json_strs_decoded
@@ -99,9 +99,10 @@ mod tests {
                 .collect::<Vec<&[u8]>>()
         );
 
-        jsonb.flush("test_jsonb_vector.parquet");
-        let jsonb_load = JsonbVector::load("test_jsonb_vector.parquet");
-        assert_eq!(jsonb, jsonb_load);
+        jsonb_vec.flush("test_jsonb_vector.parquet");
+        let mut loaded_jsonb_vec = JsonbVector::default();
+        loaded_jsonb_vec.load("test_jsonb_vector.parquet");
+        assert_eq!(loaded_jsonb_vec, jsonb_vec);
 
         std::fs::remove_file(format!("{}/test_jsonb_vector.parquet", PARQUET_DIR)).unwrap();
     }

@@ -20,14 +20,14 @@ pub fn read(file: &str) -> Result<Vec<Vec<u8>>, Box<dyn Error>> {
 
 pub trait JsonCodec {
     /// Encode JSON strings into internal representation
-    fn encode(json_str: &[&[u8]]) -> Self;
+    fn encode(&mut self, json_str: &[&[u8]]);
     /// Decode internal representation into JSON strings
     fn decode(&self) -> Vec<String>;
 
     /// Flush the internal representation to a parquet file
     fn flush(&self, path: &str);
     /// Load a parquet file into the internal representation
-    fn load(path: &str) -> Self;
+    fn load(&mut self, path: &str);
 
     fn name() -> String;
 }
