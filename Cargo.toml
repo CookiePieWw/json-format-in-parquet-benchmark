@@ -1,0 +1,20 @@
+[package]
+name = "json-format-in-parquet-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jsonb = { git = "https://github.com/datafuselabs/jsonb", branch = "main" }
+arrow = { version = "52.0.0", features = ["prettyprint"] }
+parquet = { version = "52.0.0" }
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[[bench]]
+name = "encode"
+harness = false
+
+[[bench]]
+name = "flush"
+harness = false
