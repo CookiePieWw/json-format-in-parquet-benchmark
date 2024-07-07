@@ -10,6 +10,7 @@ jsonb = { git = "https://github.com/datafuselabs/jsonb", branch = "main" }
 arrow = { version = "52.0.0", features = ["prettyprint"] }
 parquet = { version = "52.0.0" }
 criterion = { version = "0.4", features = ["html_reports"] }
+serde_json = "1"
 
 [[bench]]
 name = "encode"

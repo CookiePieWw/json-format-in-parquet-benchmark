@@ -32,21 +32,8 @@ logs/
 # cpython's generated python byte code
 **/__pycache__/
 
-# Benchmark dataset
-benchmarks/data
-
 # dotenv
 .env
 
-# dashboard files
-!/src/servers/dashboard/VERSION
-/src/servers/dashboard/*
-
-# Vscode workspace
-*.code-workspace
-
-venv/
-
-# Fuzz tests 
-tests-fuzz/artifacts/
-tests-fuzz/corpus/
+# parquet files
+*.parquet

@@ -754,6 +754,7 @@ dependencies = [
  "criterion",
  "jsonb",
  "parquet",
+ "serde_json",
 ]
 
 [[package]]
