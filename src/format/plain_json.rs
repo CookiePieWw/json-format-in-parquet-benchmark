@@ -7,6 +7,8 @@ use std::{fs::File, sync::Arc};
 
 use crate::codec::JsonCodec;
 use crate::consts::PARQUET_DIR;
+use crate::serde_ende;
+
 use parquet::{
     arrow::{arrow_reader::ParquetRecordBatchReaderBuilder, ArrowWriter},
     basic::Compression,
@@ -19,17 +21,7 @@ pub struct PlainJsonVector {
 }
 
 impl JsonCodec for PlainJsonVector {
-    fn encode(&mut self, json_str: &[&[u8]]) {
-        self.data.clear();
-        for json_str in json_str {
-            let value: Value = serde_json::from_slice(json_str).unwrap();
-            self.data.push(value);
-        }
-    }
-
-    fn decode(&self) -> Vec<String> {
-        self.data.iter().map(|v| v.to_string()).collect()
-    }
+    serde_ende!();
 
     fn flush(&self, path: &str) {
         let schema = Arc::new(Schema::new(vec![Field::new("", DataType::Utf8, false)]));

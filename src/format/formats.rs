@@ -6,7 +6,6 @@ use super::plain_json::PlainJsonVector;
 pub enum Format {
     Jsonb(JsonbVector),
     PlainJson(PlainJsonVector),
-
 }
 
 impl Format {
