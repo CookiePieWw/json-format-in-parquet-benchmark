@@ -2,13 +2,17 @@ use std::{fs::File, sync::Arc};
 
 use arrow::{
     array::{
-        ArrayRef, Float64Builder, ListBuilder, RecordBatch, StringBuilder, StructArray,
-        UInt8Builder,
+        ArrayRef, Float64Array, Float64Builder, ListArray, ListBuilder, RecordBatch, StringArray,
+        StringBuilder, StructArray, UInt8Array, UInt8Builder,
     },
     datatypes::{DataType, Field, Schema},
 };
-use parquet::{arrow::ArrowWriter, basic::Compression, file::properties::WriterProperties};
-use serde_json::Value;
+use parquet::{
+    arrow::{arrow_reader::ParquetRecordBatchReaderBuilder, ArrowWriter},
+    basic::Compression,
+    file::properties::WriterProperties,
+};
+use serde_json::{Number, Value};
 
 use crate::{codec::JsonCodec, consts::PARQUET_DIR, serde_ende};
 
@@ -26,9 +30,9 @@ enum Node {
     False,
 }
 
-impl Node {
-    fn to_u8(&self) -> u8 {
-        match self {
+impl From<&Node> for u8 {
+    fn from(node: &Node) -> u8 {
+        match node {
             Node::Null => 0,
             Node::StartArray => 1,
             Node::EndArray => 2,
@@ -43,6 +47,24 @@ impl Node {
     }
 }
 
+impl From<&u8> for Node {
+    fn from(n: &u8) -> Node {
+        match n {
+            0 => Node::Null,
+            1 => Node::StartArray,
+            2 => Node::EndArray,
+            3 => Node::StartObject,
+            4 => Node::EndObject,
+            5 => Node::Key,
+            6 => Node::String,
+            7 => Node::Number,
+            8 => Node::True,
+            9 => Node::False,
+            _ => panic!("Invalid node value"),
+        }
+    }
+}
+
 #[derive(Debug, PartialEq, Default)]
 struct Jsonc {
     pub nodes: Vec<Node>,
@@ -51,6 +73,14 @@ struct Jsonc {
 }
 
 impl Jsonc {
+    fn new(nodes: Vec<Node>, strings: Vec<String>, numbers: Vec<f64>) -> Self {
+        Jsonc {
+            nodes,
+            strings,
+            numbers,
+        }
+    }
+
     fn append(&mut self, other: &mut Jsonc) {
         self.nodes.append(&mut other.nodes);
         self.strings.append(&mut other.strings);
@@ -60,7 +90,7 @@ impl Jsonc {
     fn node_opt_list(&self) -> Vec<Option<u8>> {
         let mut node_list = Vec::new();
         for node in self.nodes.iter() {
-            node_list.push(Some(node.to_u8()));
+            node_list.push(Some(node.into()));
         }
         node_list
     }
@@ -144,6 +174,76 @@ impl From<Value> for Jsonc {
     }
 }
 
+/// Returns value, the number of nodes consumed, strings consumed, and numbers consumed
+fn jsonc_list_to_serde_value(
+    nodes: &[Node],
+    strings: &[String],
+    numbers: &[f64],
+) -> (Value, usize, usize, usize) {
+    match nodes[0] {
+        Node::Null => (Value::Null, 1, 0, 0),
+        Node::True => (Value::Bool(true), 1, 0, 0),
+        Node::False => (Value::Bool(false), 1, 0, 0),
+        Node::Number => (
+            Value::Number(Number::from_f64(numbers[0]).unwrap()),
+            1,
+            0,
+            1,
+        ),
+        Node::String => (Value::String(strings[0].clone()), 1, 1, 0),
+        Node::StartArray => {
+            let mut arr = Vec::new();
+            let mut node_idx = 1;
+            let mut string_idx = 0;
+            let mut number_idx = 0;
+            while nodes[node_idx] != Node::EndArray {
+                let (value, i, j, k) = jsonc_list_to_serde_value(
+                    &nodes[node_idx..],
+                    &strings[string_idx..],
+                    &numbers[number_idx..],
+                );
+                node_idx += i;
+                string_idx += j;
+                number_idx += k;
+                arr.push(value);
+            }
+            (Value::Array(arr), node_idx + 1, string_idx, number_idx)
+        }
+        Node::StartObject => {
+            let mut obj = serde_json::Map::new();
+            let mut node_idx = 1;
+            let mut string_idx = 0;
+            let mut number_idx = 0;
+
+            while nodes[node_idx] != Node::EndObject {
+                let key = strings[string_idx].clone();
+                string_idx += 1;
+                node_idx += 1;
+                let (value, i, j, k) = jsonc_list_to_serde_value(
+                    &nodes[node_idx..],
+                    &strings[string_idx..],
+                    &numbers[number_idx..],
+                );
+                node_idx += i;
+                string_idx += j;
+                number_idx += k;
+                obj.insert(key, value);
+            };
+
+            (Value::Object(obj), node_idx + 1, string_idx, number_idx)
+        }
+        _ => panic!("Invalid node value"),
+    }
+}
+
+impl From<Jsonc> for Value {
+    fn from(jsonc: Jsonc) -> Self {
+        let (value, _, _, _) =
+            jsonc_list_to_serde_value(&jsonc.nodes, &jsonc.strings, &jsonc.numbers);
+        value
+    }
+}
+
 #[derive(PartialEq, Eq, Debug, Default)]
 pub struct JsoncVector {
     data: Vec<Value>,
@@ -205,7 +305,51 @@ impl JsonCodec for JsoncVector {
     }
 
     fn load(&mut self, path: &str) {
-        todo!()
+        let path = format!("{}/{}", PARQUET_DIR, path);
+        let file = File::open(path).unwrap();
+        let builder = ParquetRecordBatchReaderBuilder::try_new(file).unwrap();
+        let mut reader = builder.build().unwrap();
+        let batch = reader.next().unwrap().unwrap();
+
+        let array = batch
+            .column(0)
+            .as_any()
+            .downcast_ref::<StructArray>()
+            .unwrap();
+        let node_array = array
+            .column(0)
+            .as_any()
+            .downcast_ref::<ListArray>()
+            .unwrap();
+        let string_array = array
+            .column(1)
+            .as_any()
+            .downcast_ref::<ListArray>()
+            .unwrap();
+        let number_array = array
+            .column(2)
+            .as_any()
+            .downcast_ref::<ListArray>()
+            .unwrap();
+
+        for ((nodes_opt, strings_opt), numbers_opt) in node_array
+            .iter()
+            .zip(string_array.iter())
+            .zip(number_array.iter())
+        {
+            let nodes = nodes_opt.unwrap();
+            let nodes = nodes.as_any().downcast_ref::<UInt8Array>().unwrap();
+            let strings = strings_opt.unwrap();
+            let strings = strings.as_any().downcast_ref::<StringArray>().unwrap();
+            let numbers = numbers_opt.unwrap();
+            let numbers = numbers.as_any().downcast_ref::<Float64Array>().unwrap();
+            let jsonc = Jsonc::new(
+                nodes.iter().map(|n| Node::from(&n.unwrap())).collect(),
+                strings.iter().map(|s| s.unwrap().to_string()).collect(),
+                numbers.iter().map(|n| n.unwrap()).collect(),
+            );
+            self.data.push(jsonc.into());
+        }
     }
 
     fn name() -> String {
@@ -255,14 +399,51 @@ mod tests {
     }
 
     #[test]
-    fn test_jsonc_flush() {
+    fn test_jsonc_to_serde_json() {
+        let value: Value = serde_json::from_str(r#"{"a":1.0,"b":[2.0,3.0],"c":{"d":4.0}}"#).unwrap();
+        let jsonc = Jsonc {
+            nodes: vec![
+                Node::StartObject,
+                Node::Key,
+                Node::Number,
+                Node::Key,
+                Node::StartArray,
+                Node::Number,
+                Node::Number,
+                Node::EndArray,
+                Node::Key,
+                Node::StartObject,
+                Node::Key,
+                Node::Number,
+                Node::EndObject,
+                Node::EndObject,
+            ],
+            strings: vec![
+                "a".to_string(),
+                "b".to_string(),
+                "c".to_string(),
+                "d".to_string(),
+            ],
+            numbers: vec![1.0, 2.0, 3.0, 4.0],
+        };
+        let value_from_jsonc: Value = jsonc.into();
+
+        assert_eq!(value_from_jsonc, value);
+    }
+
+    #[test]
+    fn test_jsonc_vector() {
         let jsonc_vec = JsoncVector {
             data: vec![
-                serde_json::from_str(r#"{"a":1,"b":[2,3],"c":{"d":4}}"#).unwrap(),
-                serde_json::from_str(r#"{"e":5,"f":[6,7],"g":{"h":8}}"#).unwrap(),
+                serde_json::from_str(r#"{"a":1.0,"b":[2.0,3.0],"c":{"d":4.0}}"#).unwrap(),
+                serde_json::from_str(r#"{"e":5.0,"f":[6.0,7.0],"g":{"h":8.0}}"#).unwrap(),
             ],
         };
         jsonc_vec.flush("test_jsonc_vector.parquet");
+        let mut loaded_jsonc_vec = JsoncVector::default();
+        loaded_jsonc_vec.load("test_jsonc_vector.parquet");
+        assert_eq!(loaded_jsonc_vec, jsonc_vec);
+
         std::fs::remove_file(format!("{}/test_jsonc_vector.parquet", PARQUET_DIR)).unwrap();
     }
 }
