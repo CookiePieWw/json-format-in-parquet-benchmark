@@ -68,7 +68,7 @@ impl JsonCodec for JsoncVector {
             false,
         )]));
         let jsonc_list = self.data.clone();
-        let mut node_builder = ListBuilder::new(UInt8Builder::new());
+        let mut node_builder = ListBuilder::new(UInt8Builder::with_capacity(jsonc_list.len()));
         jsonc_list.iter().for_each(|jsonc| {
             node_builder.append_value(jsonc.node_opt_list());
         });
@@ -80,7 +80,7 @@ impl JsonCodec for JsoncVector {
         });
         let string_array = string_builder.finish();
 
-        let mut number_builder = ListBuilder::new(Float64Builder::new());
+        let mut number_builder = ListBuilder::new(Float64Builder::with_capacity(jsonc_list.len()));
         jsonc_list.iter().for_each(|jsonc| {
             number_builder.append_value(jsonc.number_opt_list());
         });
