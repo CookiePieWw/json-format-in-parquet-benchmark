@@ -7,6 +7,7 @@ edition = "2021"
 
 [dependencies]
 jsonb = { git = "https://github.com/datafuselabs/jsonb", branch = "main" }
+jsonc = { git = "https://github.com/CookiePieWw/jsonc", branch = "master" }
 arrow = { version = "52.0.0", features = ["prettyprint"] }
 parquet = { version = "52.0.0" }
 criterion = { version = "0.4", features = ["html_reports"] }
@@ -19,3 +20,6 @@ harness = false
 [[bench]]
 name = "flush"
 harness = false
+
+[profile.bench]
+debug = true

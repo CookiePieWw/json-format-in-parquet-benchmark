@@ -2,12 +2,10 @@ use arrow::{
     array::{ArrayRef, RecordBatch, StringArray},
     datatypes::{DataType, Field, Schema},
 };
-use serde_json::Value;
 use std::{fs::File, sync::Arc};
 
 use crate::codec::JsonCodec;
 use crate::consts::PARQUET_DIR;
-use crate::serde_ende;
 
 use parquet::{
     arrow::{arrow_reader::ParquetRecordBatchReaderBuilder, ArrowWriter},
@@ -17,20 +15,23 @@ use parquet::{
 
 #[derive(PartialEq, Eq, Debug, Default)]
 pub struct PlainJsonVector {
-    data: Vec<Value>,
+    data: Vec<String>,
 }
 
 impl JsonCodec for PlainJsonVector {
-    serde_ende!();
+    fn encode(&mut self, json_str: &[&[u8]]) {
+        for json in json_str {
+            self.data.push(String::from_utf8(json.to_vec()).unwrap());
+        }
+    }
+
+    fn decode(&self) -> Vec<String> {
+        self.data.clone()
+    }
 
     fn flush(&self, path: &str) {
         let schema = Arc::new(Schema::new(vec![Field::new("", DataType::Utf8, false)]));
-        let array = StringArray::from(
-            self.data
-                .iter()
-                .map(|v| v.to_string())
-                .collect::<Vec<String>>(),
-        );
+        let array = StringArray::from(self.data.clone());
         let batch = RecordBatch::try_new(schema, vec![Arc::new(array) as ArrayRef]).unwrap();
 
         let props = WriterProperties::builder()
@@ -56,10 +57,7 @@ impl JsonCodec for PlainJsonVector {
             .as_any()
             .downcast_ref::<StringArray>()
             .unwrap();
-        self.data = array
-            .iter()
-            .map(|v| serde_json::from_str(v.unwrap()).unwrap())
-            .collect();
+        self.data = array.iter().map(|v| v.unwrap().to_string()).collect();
     }
 
     fn name() -> String {

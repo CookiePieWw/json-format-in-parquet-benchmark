@@ -752,8 +752,24 @@ version = "0.1.0"
 dependencies = [
  "arrow",
  "criterion",
- "jsonb",
+ "jsonb 0.4.0 (git+https://github.com/datafuselabs/jsonb?branch=main)",
+ "jsonc",
  "parquet",
+ "serde_json",
+]
+
+[[package]]
+name = "jsonb"
+version = "0.4.0"
+source = "git+https://github.com/CookiePieWw/jsonb.git?branch=main#2afc8fd8ad8f4eabd41a5dfda82f91ce1604be60"
+dependencies = [
+ "byteorder",
+ "fast-float",
+ "itoa",
+ "nom",
+ "ordered-float 4.2.1",
+ "rand",
+ "ryu",
  "serde_json",
 ]
 
@@ -769,6 +785,16 @@ dependencies = [
  "ordered-float 4.2.1",
  "rand",
  "ryu",
+ "serde_json",
+]
+
+[[package]]
+name = "jsonc"
+version = "0.1.0"
+source = "git+https://github.com/CookiePieWw/jsonc?branch=master#9ac8cb6b5f3fe624744a552795d295a0140ae841"
+dependencies = [
+ "fast-float",
+ "jsonb 0.4.0 (git+https://github.com/CookiePieWw/jsonb.git?branch=main)",
  "serde_json",
 ]
 
