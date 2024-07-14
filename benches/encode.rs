@@ -15,6 +15,7 @@ fn criterion_benchmark(c: &mut Criterion) {
             })
         });
 
+        format.encode(&json_strs.iter().map(|v| &v[..]).collect::<Vec<&[u8]>>());
         c.bench_function(&(available_format.to_string() + " decode"), |b| {
             b.iter(|| {
                 format.decode();
