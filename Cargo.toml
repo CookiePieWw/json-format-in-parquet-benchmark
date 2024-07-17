@@ -21,5 +21,9 @@ harness = false
 name = "flush"
 harness = false
 
+[[bench]]
+name = "query"
+harness = false
+
 [profile.bench]
 debug = true
