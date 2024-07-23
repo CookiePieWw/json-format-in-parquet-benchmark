@@ -1,0 +1,1024 @@
+{ "key": "busy_ns", "type": "int64", "value": 146800 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 285 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 54000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "path", "type": "string", "value": "/promql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 450701 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 341 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 41000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 44500 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/operation.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 189 }
+{"key": "code.namespace","type": "string","value": "aide::operation"}
+{ "key": "idle_ns", "type": "int64", "value": 63900 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 450701 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 341 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 41000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 114301 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 285 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 42000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "path", "type": "string", "value": "/scripts" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 327400 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 341 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 60000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 25400 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/operation.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 189 }
+{"key": "code.namespace","type": "string","value": "aide::operation"}
+{ "key": "idle_ns", "type": "int64", "value": 43100 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 327400 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 341 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 60000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 242300 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 285 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 41200 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "path", "type": "string", "value": "/run-script" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 871618159 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 337 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 53501 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 64412323 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 412 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 54300 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 126800 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 337 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 57600 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 178301 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 412 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 37900 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 151401 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 329 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 43000 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 65800 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/routing.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 337 }
+{"key": "code.namespace","type": "string","value": "aide::axum::routing"}
+{ "key": "idle_ns", "type": "int64", "value": 65200 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 68000 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 412 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 41701 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 747601 }
+{"key": "code.filepath","type": "string","value": "$HOME/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/aide-0.9.0/src/axum/mod.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 329 }
+{"key": "code.namespace","type": "string","value": "aide::axum"}
+{ "key": "idle_ns", "type": "int64", "value": 37800 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 1 }
+{ "key": "thread.name", "type": "string", "value": "main" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 70813436 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 930501 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 53126901 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 99 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 499101 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 70813436 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 930501 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 31205160 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 87600 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 30759959 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 99 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 79500 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 31205160 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 87600 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 227764734}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 376}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 89799}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 222876324}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 99 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 66100 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 216236911 }
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 240 }
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{ "key": "idle_ns", "type": "int64", "value": 917801 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 144590274 }
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 105 }
+{"key": "code.namespace","type": "string","value": "operator::statement"}
+{ "key": "idle_ns", "type": "int64", "value": 657802 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 227764734 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 89799 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 227764734}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 376}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 89799}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 222876324}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 99}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 66100}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 216236911}
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{"key": "code.lineno","type": "int64","value": 240}
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{"key": "idle_ns","type": "int64","value": 917801}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 144590274}
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 105 }
+{"key": "code.namespace","type": "string","value": "operator::statement"}
+{ "key": "idle_ns", "type": "int64", "value": 657802 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 141404168 }
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement/ddl.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 91 }
+{"key": "code.namespace","type": "string","value": "operator::statement::ddl"}
+{ "key": "idle_ns", "type": "int64", "value": 514602 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 98346488 }
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement/ddl.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 148 }
+{"key": "code.namespace","type": "string","value": "operator::statement::ddl"}
+{ "key": "idle_ns", "type": "int64", "value": 775901 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "busy_ns", "type": "int64", "value": 227764734 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 89799 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "protocol", "type": "string", "value": "mysql" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 222876324 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 99 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 66100 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 227764734}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 376 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 89799 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 222876324 }
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 99 }
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{ "key": "idle_ns", "type": "int64", "value": 66100 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 216236911 }
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 240 }
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{ "key": "idle_ns", "type": "int64", "value": 917801 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 227764734}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 376}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 89799}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 222876324}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 99}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 66100}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 55}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 216236911}
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 240 }
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{ "key": "idle_ns", "type": "int64", "value": 917801 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 144590274 }
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 105 }
+{"key": "code.namespace","type": "string","value": "operator::statement"}
+{ "key": "idle_ns", "type": "int64", "value": 657802 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 141404168 }
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement/ddl.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 91 }
+{"key": "code.namespace","type": "string","value": "operator::statement::ddl"}
+{ "key": "idle_ns", "type": "int64", "value": 514602 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 55 }
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{ "key": "service.instance.id", "type": "string", "value": "none" }
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 42217180}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 376}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 134462657}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 41093078}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 99}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 134388257}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 31981860}
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{"key": "code.lineno","type": "int64","value": 240}
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{"key": "idle_ns","type": "int64","value": 134475757}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 27730453}
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement.rs"}
+{"key": "code.lineno","type": "int64","value": 105}
+{"key": "code.namespace","type": "string","value": "operator::statement"}
+{"key": "idle_ns","type": "int64","value": 134542756}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 24358447}
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement/ddl.rs"}
+{"key": "code.lineno","type": "int64","value": 748}
+{"key": "code.namespace","type": "string","value": "operator::statement::ddl"}
+{"key": "idle_ns","type": "int64","value": 135084557}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 14785628}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 746}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "idle_ns","type": "int64","value": 135420659}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "event","type": "string","value": "Table: 1024 is dropped via procedure_id ProcedureId(70da961f-3c6b-4c8b-b08f-dcd263c9cfbe)"}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 478}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_meta::ddl_manager"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 10787821}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 243}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "idle_ns","type": "int64","value": 135134458}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 116871522}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local.rs"}
+{"key": "code.lineno","type": "int64","value": 472}
+{"key": "code.namespace","type": "string","value": "common_procedure::local"}
+{"key": "idle_ns","type": "int64","value": 24013546}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 18}
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
+{"key": "event","type": "string","value": "Runner metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe starts"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 109}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "event","type": "string","value": "Deleted table metadata for table 1024"}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl/drop_table.rs"}
+{"key": "code.lineno","type": "int64","value": 136}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl::drop_table"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_meta::ddl::drop_table"}
+{"key": "event","type": "string","value": "Procedure metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe done"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 519}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "event","type": "string","value": "Runner metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe exits"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 165}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 5903811 }
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance/standalone.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 81 }
+{"key": "code.namespace","type": "string","value": "frontend::instance::standalone"}
+{"key": "idle_ns","type": "int64","value": 24069346}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{ "key": "thread.id", "type": "int64", "value": 18 }
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 3350506 }
+{"key": "code.filepath","type": "string","value": "src/datanode/src/region_server.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 352 }
+{"key": "code.namespace","type": "string","value": "datanode::region_server"}
+{ "key": "idle_ns", "type": "int64", "value": 24352047 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "region_id","type": "string","value": "4398046511104(1024, 0)"}
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 18 }
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{ "key": "busy_ns", "type": "int64", "value": 2697005 }
+{"key": "code.filepath","type": "string","value": "src/datanode/src/region_server.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 137 }
+{"key": "code.namespace","type": "string","value": "datanode::region_server"}
+{ "key": "idle_ns", "type": "int64", "value": 24208246 }
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{ "key": "request_type", "type": "string", "value": "Drop" }
+{ "key": "span.kind", "type": "string", "value": "internal" }
+{ "key": "thread.id", "type": "int64", "value": 18 }
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
+{"key": "event","type": "string","value": "Region 4398046511104(1024, 0) is deregistered from engine mito"}
+{"key": "code.filepath","type": "string","value": "src/datanode/src/region_server.rs"}
+{ "key": "code.lineno", "type": "int64", "value": 788 }
+{"key": "code.namespace","type": "string","value": "datanode::region_server"}
+{ "key": "level", "type": "string", "value": "INFO" }
+{"key": "target","type": "string","value": "datanode::region_server"}
+{ "key": "process.pid", "type": "string", "value": "228366" }
+{"key": "service.instance.id","type": "string","value": "none"}
+{ "key": "service.version", "type": "string", "value": "0.9.0" }
+{"key": "busy_ns","type": "int64","value": 42217180}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 376}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 134462657}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "protocol","type": "string","value": "mysql"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 41093078}
+{"key": "code.filepath","type": "string","value": "src/servers/src/mysql/handler.rs"}
+{"key": "code.lineno","type": "int64","value": 99}
+{"key": "code.namespace","type": "string","value": "servers::mysql::handler"}
+{"key": "idle_ns","type": "int64","value": 134388257}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 31981860}
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance.rs"}
+{"key": "code.lineno","type": "int64","value": 240}
+{"key": "code.namespace","type": "string","value": "frontend::instance"}
+{"key": "idle_ns","type": "int64","value": 134475757}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 27730453}
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement.rs"}
+{"key": "code.lineno","type": "int64","value": 105}
+{"key": "code.namespace","type": "string","value": "operator::statement"}
+{"key": "idle_ns","type": "int64","value": 134542756}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 24358447}
+{"key": "code.filepath","type": "string","value": "src/operator/src/statement/ddl.rs"}
+{"key": "code.lineno","type": "int64","value": 748}
+{"key": "code.namespace","type": "string","value": "operator::statement::ddl"}
+{"key": "idle_ns","type": "int64","value": 135084557}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 14785628}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 746}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "idle_ns","type": "int64","value": 135420659}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "event","type": "string","value": "Table: 1024 is dropped via procedure_id ProcedureId(70da961f-3c6b-4c8b-b08f-dcd263c9cfbe)"}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 478}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_meta::ddl_manager"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 10787821}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl_manager.rs"}
+{"key": "code.lineno","type": "int64","value": 243}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl_manager"}
+{"key": "idle_ns","type": "int64","value": 135134458}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 54}
+{"key": "thread.name","type": "string","value": "mysql-io-handlers"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 116871522}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local.rs"}
+{"key": "code.lineno","type": "int64","value": 472}
+{"key": "code.namespace","type": "string","value": "common_procedure::local"}
+{"key": "idle_ns","type": "int64","value": 24013546}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 18}
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
+{"key": "event","type": "string","value": "Runner metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe starts"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 109}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "event","type": "string","value": "Deleted table metadata for table 1024"}
+{"key": "code.filepath","type": "string","value": "src/common/meta/src/ddl/drop_table.rs"}
+{"key": "code.lineno","type": "int64","value": 136}
+{"key": "code.namespace","type": "string","value": "common_meta::ddl::drop_table"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_meta::ddl::drop_table"}
+{"key": "event","type": "string","value": "Procedure metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe done"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 519}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "event","type": "string","value": "Runner metasrv-procedure::DropTable-70da961f-3c6b-4c8b-b08f-dcd263c9cfbe exits"}
+{"key": "code.filepath","type": "string","value": "src/common/procedure/src/local/runner.rs"}
+{"key": "code.lineno","type": "int64","value": 165}
+{"key": "code.namespace","type": "string","value": "common_procedure::local::runner"}
+{"key": "level","type": "string","value": "INFO"}
+{"key": "target","type": "string","value": "common_procedure::local::runner"}
+{"key": "process.pid","type": "string","value": "228366"}
+{"key": "service.instance.id","type": "string","value": "none"}
+{"key": "service.version","type": "string","value": "0.9.0"}
+{"key": "busy_ns","type": "int64","value": 5903811}
+{"key": "code.filepath","type": "string","value": "src/frontend/src/instance/standalone.rs"}
+{"key": "code.lineno","type": "int64","value": 81}
+{"key": "code.namespace","type": "string","value": "frontend::instance::standalone"}
+{"key": "idle_ns","type": "int64","value": 24069346}
+{"key": "internal.span.format","type": "string","value": "otlp"}
+{"key": "otel.library.name","type": "string","value": "opentelemetry-otlp"}
+{"key": "otel.library.version","type": "string","value": "0.14.0"}
+{"key": "span.kind","type": "string","value": "internal"}
+{"key": "thread.id","type": "int64","value": 18}
+{"key": "thread.name","type": "string","value": "global-bg-worker"}
