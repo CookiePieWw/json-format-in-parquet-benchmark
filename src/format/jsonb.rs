@@ -9,7 +9,7 @@ use arrow::{
 use jsonb::{parse_value, to_string};
 use parquet::{
     arrow::{arrow_reader::ParquetRecordBatchReaderBuilder, ArrowWriter},
-    basic::Compression,
+    basic::{Compression, ZstdLevel},
     file::properties::WriterProperties,
 };
 
@@ -48,7 +48,7 @@ impl JsonCodec for JsonbVector {
         let batch = RecordBatch::try_new(schema, vec![Arc::new(array) as ArrayRef]).unwrap();
 
         let props = WriterProperties::builder()
-            .set_compression(Compression::SNAPPY)
+            .set_compression(Compression::ZSTD(ZstdLevel::default()))
             .build();
         let path = format!("{}/{}", PARQUET_DIR, path);
         let file = File::create(path).unwrap();

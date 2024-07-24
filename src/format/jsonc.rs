@@ -12,7 +12,7 @@ use jsonc::parser::parse_value;
 use jsonc::decoder::decode;
 use parquet::{
     arrow::{arrow_reader::ParquetRecordBatchReaderBuilder, ArrowWriter},
-    basic::Compression,
+    basic::{Compression, ZstdLevel},
     file::properties::WriterProperties,
 };
 
@@ -98,7 +98,7 @@ impl JsonCodec for JsoncVector {
         let batch = RecordBatch::try_new(schema, vec![Arc::new(array)]).unwrap();
 
         let props = WriterProperties::builder()
-            .set_compression(Compression::SNAPPY)
+            .set_compression(Compression::ZSTD(ZstdLevel::default()))
             .build();
         let path = format!("{}/{}", PARQUET_DIR, path);
         let file = File::create(path).unwrap();
