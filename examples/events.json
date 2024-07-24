@@ -1,0 +1,7 @@
+{
+  "name": str 0.3 "[a-zA-Z0-9]+" ,
+  "timestamp": timestamp ,
+  "attributes": {
+    "event_attributes": int 0.3 ,
+  }
+}
