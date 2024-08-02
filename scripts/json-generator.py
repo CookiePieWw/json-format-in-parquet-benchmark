@@ -23,6 +23,21 @@ with open(args.example, "r") as f:
 value_types = ["int", "float", "str", "bool", "timestamp"]
 
 
+def choice(value_list, k):
+    if k == len(value_list):
+        return value_list
+    # Ensure that all values are chosen at least once
+    if k < len(value_list):
+        raise ValueError("k must be greater than or equal to the length of value_list.")
+
+    # Shuffle the list and extend it
+    extended_list = value_list * (k // len(value_list)) + random.sample(value_list, k % len(value_list))
+
+    # Shuffle the extended list to ensure randomness
+    random.shuffle(extended_list)
+
+    return extended_list
+
 # Generate the json records
 def gen_int(num_range):
     return str(random.randint(num_range[0], num_range[1]))
@@ -50,7 +65,8 @@ def gen_timestamp():
 
 def gen_based_on_ndv(value_type, ndv, kargs):
     unique_values = []
-    for _ in range(int(ndv * args.count) + 1):
+    num = int(ndv * args.count) + 1 if ndv != 1 else args.count
+    for _ in range(num):
         if value_type == "int":
             unique_values.append(gen_int(kargs))
         elif value_type == "float":
@@ -64,27 +80,30 @@ def gen_based_on_ndv(value_type, ndv, kargs):
 
 
 def gen_value_list():
-    value_list = []
+    value_lists = []
     for i, word in enumerate(example):
         if word == "int":
             ndv = float(example[i + 1])
             num_range = [0, 1000]
-            value_list.append(gen_based_on_ndv("int", ndv, num_range))
+            value_lists.append(gen_based_on_ndv("int", ndv, num_range))
         elif word == "float":
             ndv = float(example[i + 1])
             num_range = [0, 1000]
-            value_list.append(gen_based_on_ndv("float", ndv, num_range))
+            value_lists.append(gen_based_on_ndv("float", ndv, num_range))
         elif word == "bool":
             ndv = float(example[i + 1])
-            value_list.append(gen_based_on_ndv("bool", ndv, None))
+            value_lists.append(gen_based_on_ndv("bool", ndv, None))
         elif word == "str":
             ndv = float(example[i + 1])
             regex_str = example[i + 2]
-            value_list.append(gen_based_on_ndv("str", ndv, regex_str))
-    return value_list
+            value_lists.append(gen_based_on_ndv("str", ndv, regex_str))
+    choice_lists = []
+    for value_list in value_lists:
+        choice_lists.append(choice(value_list, args.count))
+    return choice_lists
 
 
-def gen_json(value_list):
+def gen_json(value_lists, cnt):
     skip_next = False
     skip_twice = False
     i = 0
@@ -99,10 +118,10 @@ def gen_json(value_list):
             continue
         skip_next = True
         if word == "int" or word == "float" or word == "bool":
-            json += random.choice(value_list[i])
+            json += value_lists[i][cnt]
             i += 1
         elif word == "str":
-            json += random.choice(value_list[i])
+            json += value_lists[i][cnt]
             i += 1
             skip_twice = True
             skip_next = False
@@ -116,8 +135,8 @@ def gen_json(value_list):
 
 
 if __name__ == "__main__":
-    value_list = gen_value_list()
-    for _ in range(args.count):
-        json = gen_json(value_list)
+    value_lists = gen_value_list()
+    for i in range(args.count,):
+        json = gen_json(value_lists, i)
         json.replace("\n", "")
         print(json)
