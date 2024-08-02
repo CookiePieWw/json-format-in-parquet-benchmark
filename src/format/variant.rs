@@ -37,7 +37,7 @@ fn const_schema() -> Vec<Field> {
                 vec![
                     Field::new(
                         "event_attributes",
-                        DataType::Float32,
+                        DataType::Float64,
                         false,
                     )
                 ].into()
@@ -84,17 +84,17 @@ impl JsonCodec for VariantVector {
             vec![
                 Field::new(
                     "event_attributes",
-                    DataType::Float32,
+                    DataType::Float64,
                     false,
                 )
             ],
             0
         );
-        let event_attributes_builder = attributes_builder.field_builder::<Float32Builder>(0).unwrap();
+        let event_attributes_builder = attributes_builder.field_builder::<Float64Builder>(0).unwrap();
         for jsonc in &jsonc_list {
             name_builder.append_value(jsonc.get(&["\"name\""]).unwrap().to_string());
             timestamp_builder.append_value(jsonc.get(&["\"timestamp\""]).unwrap().to_string());
-            let event_attributes = jsonc.get(&["\"attributes\"", "\"event_attributes\""]).unwrap().parse::<f32>().unwrap();
+            let event_attributes = jsonc.get(&["\"attributes\"", "\"event_attributes\""]).unwrap().parse::<f64>().unwrap();
             event_attributes_builder.append_value(event_attributes);
         }
 
